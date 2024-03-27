@@ -213,3 +213,8 @@ pre {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
 }
+
+.hitwebcounter {
+  display: inline-block;
+  height: 40px;
+}
