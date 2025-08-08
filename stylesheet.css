@@ -217,4 +217,57 @@ pre {
 .hitwebcounter {
   display: inline-block;
   height: 40px;
+  width: 1200px;
+}
+
+.section-title {
+    font-size: 1.25rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: black;
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align the text */
+    line-height: 1.5; /* Adjust line height for better spacing */
+}
+
+/* Style for each news entry */
+.news-entry {
+    display: flex;
+    align-items: flex-start; /* Align image and text at the top */
+    margin-bottom: 20px; /* Add spacing between entries */
+    border-radius: 10px; /* Rounded border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden; /* Ensure content stays within rounded borders */
+    padding: 15px; /* Add padding inside the entry */
+    background-color: #fff; /* Optional: Add a background color */
+}
+
+
+/* Style for the news image */
+.news-image {
+    flex: 0 0 auto; /* Prevent the image from stretching */
+    width: 250px; /* Fixed width for the image */
+    margin-right: 15px; /* Space between image and text */
+}
+
+
+.news-image img {
+    width: 100%; /* Make the image responsive */
+    /* height: auto;  */
+    max-height: 200px;
+    display: block; /* Ensure proper rendering */
+}
+
+
+/* Style for the news text */
+.news-text {
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+/* Handle entries without an image */
+.news-image:empty {
+    display: none; /* Hide the image container if empty */
+}
+
+.abstract {
+    margin-top: 10px; /* Add spacing above the abstract */
 }
